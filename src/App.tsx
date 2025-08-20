@@ -1,9 +1,9 @@
 //import { useState } from 'react'
 import GridComponent from './components/GridComponent.tsx';
-
 /* import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg' */
 import './App.css'
+//import GridComponent from './components/GridComponent'
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -14,7 +14,6 @@ function App() {
       <h1>sorteos ponle a la bola</h1>
       <div className="card">
         <div>
-          <h2>numeros disponibles</h2>
           <GridComponent />
         </div>
 
