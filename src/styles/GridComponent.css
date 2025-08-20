@@ -1,0 +1,37 @@
+/* GridComponent.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  padding: 20px;
+}
+
+.grid-cell {
+  background-color: #f4f4f4;
+  transition: background-color 1s ease; /* Duración y tipo de transición */
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+/* Al pasar el mouse */
+.grid-cell:hover {
+  background-color: #e74c3c; /* Rojo al hacer hover */
+}
+
+
+.cell-number {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+  
+}
+
+.cell-name {
+  color: #555;
+}
