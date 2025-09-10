@@ -1,0 +1,102 @@
+.formulario-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #f1f8e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-container h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #33691e;
+}
+
+.formulario-container p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #558b2f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.spanLista{
+  font-weight: bold;
+}
+input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  border-color: #8bc34a;
+  outline: none;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.botones button {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botones button:first-child {
+  background-color: #43a047;
+  color: white;
+}
+
+.botones button:first-child:hover {
+  background-color: #388e3c;
+}
+
+.botones button:last-child {
+  background-color: #e53935;
+  color: white;
+}
+
+.botones button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 480px) {
+  .formulario-container {
+    padding: 1rem;
+  }
+
+  form {
+    gap: 0.8rem;
+  }
+
+  input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .botones button {
+    margin-bottom: 10px;
+  }
+}
