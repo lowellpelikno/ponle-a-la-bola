@@ -1,0 +1,105 @@
+/* Fondo general 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e6f3ec;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}*/
+
+/* Contenedor principal */
+.login-container {
+  background-color: #ffffff;
+  border: 2px solid #81c784;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Título */
+.login-container h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Grupo de campos */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs */
+.form-group input {
+  padding: 0.6rem;
+  border: 1px solid #81c784;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2e7d32;
+}
+
+/* Botón */
+button[type="submit"] {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b5e20;
+}
+
+button[disabled] {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+/* Mensaje de error */
+.error {
+  color: red;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}

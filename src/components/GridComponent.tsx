@@ -40,7 +40,7 @@ const GridComponent = () => {
   return (
     <div className="grid-container">
     <h2 className="grid-title">Selecciona tus números</h2>
-    <p>Buscar numero <input type="text" onChange={e => buscarNumero(e.target.value)} /> </p>
+    <p><input placeholder='Buscar número...' type="text" onChange={e => buscarNumero(e.target.value)} /></p>
     <div className="grid-numeros">
       {numeros.map(num => (
         <button key={num} className="numero-btn" onClick={() => seleccionarNumero(num)}>

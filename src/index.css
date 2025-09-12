@@ -1,4 +1,17 @@
+/* Contenedor general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #b4c3bd; /* Verde muy claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .app-wrapper {
+  background-color: #ef05f7;
   display: flex;
   flex-direction: column;
   align-items: center;       /* Centra horizontalmente */

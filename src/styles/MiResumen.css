@@ -1,0 +1,88 @@
+/* Contenedor general */
+.resumen-listado {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Tarjeta individual de reserva */
+.reserva-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #f7f7f7; /* Verde claro */
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Columna izquierda: información principal */
+.reserva-info {
+  flex: 1;
+  padding-right: 1rem;
+  
+}
+
+.reserva-info h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Columna derecha: costo y estado */
+/*.reserva-costo {
+  min-width: 120px;
+  text-align: right;
+  color: #fff;
+  background-color: #0a7347;
+  padding: 0.5rem;
+  border-radius: 4px;
+}*/
+.reserva-costo {
+  min-width: 120px;
+ /* background-color: #0a7347;*/
+  padding: 0.5rem;
+  border: 1px solid #0a7347;
+  border-radius: 4px;  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.reserva-costo p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.reserva-costo span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Separador vertical entre columnas */
+.reserva-card::before {
+  content: "";
+  width: 2px;
+  background-color: #ef05f7;
+  margin: 0 1rem;
+}
+.btn-cancelar {
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #ef05f7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: #c004c4;
+}
